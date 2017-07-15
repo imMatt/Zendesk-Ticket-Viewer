@@ -15,15 +15,18 @@ html
           span
             | #{ticket.subject}
             | !{' '}
-
         .description
-        span
+        span.nocase
          | Description
          p.ticketbody #{ticket.description}
-        span
+        span.nocase
+      .ticket-body
+        .passenger
           | Comments
           each comment in listofcomments
             p.ticketbody #{comment.body}
+      .ticket-body
+        .passenger
         ul.clearfix
           li
             h4 Type
