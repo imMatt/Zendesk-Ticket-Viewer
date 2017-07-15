@@ -1,0 +1,46 @@
+html
+  head
+    title Zendesk Ticket Viewer
+    link(rel='stylesheet', href='./css/ticket.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+  body
+    .ticket
+      .ticket-header.clearfix
+        a.logo(href='#')
+          img(src='https://d1eipm3vz40hy0.cloudfront.net/images/p-brand/zendesk-wordmark.svg', alt='Swiss Airline')
+      .break
+
+      each ticket in tickets
+        .ticket-body
+          .passenger
+            span
+              | #{ticket.subject}
+              | !{' '}
+              a.fa.fa-arrow-circle-o-right(href='/ticket?id=' + ticket.id, aria-hidden='true')
+
+          .description
+          ul.clearfix
+            li
+              h4 Type
+              span #{ticket.status || "n/a"}
+            li
+              h4 Priority
+              span #{ticket.priority || "n/a"}
+            li
+              h4 ID
+              span Ticket ##{ticket.id}
+
+      .ticket-body
+        ul.clearfix
+          li
+            if pagenumber > 1
+              a(href='/?page='  + (pagenumber-1))
+                h4 PREVIOUS
+            else
+              a(href='/')
+                h4 HOME
+          li
+            h4 #{pagenumber}/#{numberofpages}
+          li
+            a(href='/?page=' + (1*pagenumber+1))
+              h4 NEXT

@@ -1,0 +1,333 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: #eef1f5;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 0.8;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.4em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+h4 {
+  font-size: 0.85em;
+  line-height: 1;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+span {
+  text-transform: uppercase;
+}
+
+.description {
+  border-left: 5px solid #ccc;
+  padding-left: 10px;
+  font-weight: 100;
+}
+
+.break {
+  border-bottom: 1px dashed #a3afc1;
+}
+
+.ticket-open {
+  border-left: 10px solid #e2484a
+}
+
+.ticket-pending {
+  border-left: 10px solid #49e275
+}
+
+.ticket-solved {
+  border-left: 10px solid #48d0e2
+}
+
+.ticket {
+  box-shadow: 0 -140px 86px #c7d1de;
+  background: #ffffff;
+  border-radius: 0.3em;
+  width: 500px;
+  max-width: 100%;
+  margin: 20px auto 20px;
+}
+.ticket-header {
+  padding: 20px;
+}
+.ticket-header .logo {
+  display: inline-block;
+  float: left;
+  width: 100px;
+}
+.ticket-header .logo img {
+  width: 100%;
+}
+.ticket-header .title {
+  color: #153f4f;
+  float: right;
+  margin-top: 1px;
+}
+.ticket-overview {
+  background: #04363d;
+  color: #ffffff;
+  padding: 40px;
+}
+.ticket-overview li {
+  float: left;
+  width: 33.3%;
+  text-align: center;
+}
+.ticket-overview li .fa {
+  font-size: 2.5em;
+  margin-top: 8px;
+}
+.ticket-overview li span {
+  font-size: 0.85em;
+}
+.ticket-details {
+  background: #b4bcc6;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 20px 40px;
+}
+.ticket-details li {
+  float: left;
+  width: 33.3%;
+  text-align: center;
+}
+.ticket-details li span {
+  font-size: 0.85em;
+}
+.ticket-body {
+  padding: 40px;
+  border-bottom: 1px dashed #a3afc1;
+}
+.ticket-body h4 {
+  color: #a3afc1;
+}
+.ticket-body .passenger {
+  margin-bottom: 20px;
+}
+.ticket-body .passenger span {
+  color: #04363d !important;
+  font-size: 1.2em;
+}
+.ticket-body li {
+  float: left;
+  width: 33.3%;
+}
+.ticket-body li span {
+  color: #1a4253;
+}
+a {
+  color: #04363d;
+  text-decoration: none;
+}
+.ticket-footer {
+  padding: 20px 40px;
+  border-top: 1px dashed #a3afc1;
+  position: relative;
+}
+.ticket-footer:before, .ticket-footer:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #eef1f5;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+}
+.ticket-footer:before {
+  left: -10px;
+}
+.ticket-footer:after {
+  right: -10px;
+}
+.ticket-footer ul {
+  display: inline-block;
+  float: left;
+}
+.ticket-footer ul li {
+  float: left;
+  padding: 0 10px;
+}
+.ticket-footer ul li h2 {
+  color: #1a4253;
+}
+.ticket-footer ul li span {
+  color: #1a4253;
+  font-size: 0.5em;
+}
+.ticket-footer ul li .fa {
+  color: #e24b4b;
+  font-size: 1.5em;
+  margin-top: 4px;
+}
+.ticket-footer .verifying-code {
+  float: right;
+  width: 60px;
+}
+.ticket-footer .verifying-code img {
+  width: 100%;
+}
+.ticket-body p {
+  margin: 20px;
+  padding-left: 10px;
+  font-weight: 100px;
+  font-size: 12px;
+  border-left: 5px solid #dadada;
+  text-transform: none !important;
+}
+
+.sk-circle {
+  margin: 0px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.sk-circle .sk-child {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.sk-circle .sk-child:before {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 15%;
+  height: 15%;
+  background-color: #333;
+  border-radius: 100%;
+  -webkit-animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
+          animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
+}
+.sk-circle .sk-circle2 {
+  -webkit-transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+          transform: rotate(30deg); }
+.sk-circle .sk-circle3 {
+  -webkit-transform: rotate(60deg);
+      -ms-transform: rotate(60deg);
+          transform: rotate(60deg); }
+.sk-circle .sk-circle4 {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg); }
+.sk-circle .sk-circle5 {
+  -webkit-transform: rotate(120deg);
+      -ms-transform: rotate(120deg);
+          transform: rotate(120deg); }
+.sk-circle .sk-circle6 {
+  -webkit-transform: rotate(150deg);
+      -ms-transform: rotate(150deg);
+          transform: rotate(150deg); }
+.sk-circle .sk-circle7 {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+.sk-circle .sk-circle8 {
+  -webkit-transform: rotate(210deg);
+      -ms-transform: rotate(210deg);
+          transform: rotate(210deg); }
+.sk-circle .sk-circle9 {
+  -webkit-transform: rotate(240deg);
+      -ms-transform: rotate(240deg);
+          transform: rotate(240deg); }
+.sk-circle .sk-circle10 {
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg); }
+.sk-circle .sk-circle11 {
+  -webkit-transform: rotate(300deg);
+      -ms-transform: rotate(300deg);
+          transform: rotate(300deg); }
+.sk-circle .sk-circle12 {
+  -webkit-transform: rotate(330deg);
+      -ms-transform: rotate(330deg);
+          transform: rotate(330deg); }
+.sk-circle .sk-circle2:before {
+  -webkit-animation-delay: -1.1s;
+          animation-delay: -1.1s; }
+.sk-circle .sk-circle3:before {
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s; }
+.sk-circle .sk-circle4:before {
+  -webkit-animation-delay: -0.9s;
+          animation-delay: -0.9s; }
+.sk-circle .sk-circle5:before {
+  -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s; }
+.sk-circle .sk-circle6:before {
+  -webkit-animation-delay: -0.7s;
+          animation-delay: -0.7s; }
+.sk-circle .sk-circle7:before {
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s; }
+.sk-circle .sk-circle8:before {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s; }
+.sk-circle .sk-circle9:before {
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s; }
+.sk-circle .sk-circle10:before {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s; }
+.sk-circle .sk-circle11:before {
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s; }
+.sk-circle .sk-circle12:before {
+  -webkit-animation-delay: -0.1s;
+          animation-delay: -0.1s; }
+
+@-webkit-keyframes sk-circleBounceDelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  } 40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes sk-circleBounceDelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  } 40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
