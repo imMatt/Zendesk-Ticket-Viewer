@@ -3,6 +3,7 @@
  Built as part of the recruitment process for the 2017 Zendesk Internships
 
 [![Build Status](https://travis-ci.org/Matt-Allen44/TicketZen.svg?branch=master)](https://travis-ci.org/Matt-Allen44/TicketZen)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)  [!
 
 #### Installation
 ```bash
