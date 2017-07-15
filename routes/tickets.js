@@ -3,10 +3,13 @@ var router = express.Router();
 
 var zendesk = require('node-zendesk');
 
+var config = require('config');
+//...
+var zendeskconf = config.get('zendesk');
 var client = zendesk.createClient({
-  username:  'whosdaz@gmail.com',
-  token:     'h4ZJdjFkwyVbFYGomZ3aum69ThiWBXVx6fdiG077',
-  remoteUri: 'https://mallenintern.zendesk.com/api/v2'
+  username: zendeskconf.username,
+  password: zendeskconf.password,
+  remoteUri:  zendeskconf.remoteUri
 });
 
 /* GET home page. */
