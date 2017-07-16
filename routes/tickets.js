@@ -25,8 +25,6 @@ router.get('/', function(reqo, res, next) {
     var numpages = Math.ceil(result.length/25);
     var pagedResults = result.slice(25*(page-1), 25*(page-1)+25)
 
-
-
     res.render('tickets', { tickets: pagedResults, numberofpages: numpages, pagenumber: page});
   });
 });

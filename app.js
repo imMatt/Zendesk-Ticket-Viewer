@@ -5,7 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var index = require('./routes/index');
+var loading = require('./routes/loading');
 var tickets = require('./routes/tickets');
 var ticket = require('./routes/ticket');
 var users = require('./routes/users');
@@ -25,7 +25,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
 
-app.use('/', index);
+app.use('/', loading);
 app.use('/tickets', tickets);
 app.use('/users', users);
 app.use('/ticket', ticket);
