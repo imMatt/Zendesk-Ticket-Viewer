@@ -50,6 +50,9 @@ example output:
   * Displays individual tickets
 
 ## Usage
+* install using npm install
+* run testes using npm test (optional)
+* set auth details in the config folder (my zendesk details are still there for testing by Zendesk - not an active account)
 * Run the script using npm run
 * navigate to localhost:3000 to view the page
 * the overview can be found at /tickets
