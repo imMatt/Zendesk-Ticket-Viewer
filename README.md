@@ -1,5 +1,5 @@
 [![Zendesk Logo](https://d1eipm3vz40hy0.cloudfront.net/images/p-brand/zendesk-wordmark.svg)](http://expressjs.com/)
-# A Ticket View for Zendesk built using NodeJS + Express
+# A Ticket View for Zendesk built using NodeJS + Express & PugJS (formerly know as Jade) 
  Built as part of the recruitment process for the 2017 Zendesk Internships
 
 [![Build Status](https://travis-ci.org/Matt-Allen44/TicketZen.svg?branch=master)](https://travis-ci.org/Matt-Allen44/TicketZen)
